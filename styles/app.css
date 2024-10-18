@@ -1,0 +1,73 @@
+:root{
+        --white : #FFFFFF;
+        --Light-colour : #F5F5F5;
+        --Low-priority : #848191;
+        --Primary-colour : #7562E0;
+        --Secondary-colour : #282162;
+        --Dark-colour : #000036;
+
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::after,*::before
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    background-color: var(--Secondary-colour);
+}
+
+/* Nav Section */
+.container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header
+{
+    margin-top: 2.5rem;
+}
+.nav{
+    display: flex;
+}
+.nav_wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav_logo{
+    margin-right: 3rem;
+}
+.menu-list{
+display: flex;
+align-items: center;
+gap: 4rem;
+font-size: 2.5rem;
+}
+.menu-list_item{
+font-family: "Poppins" ;
+color: var(--Light-colour);
+
+}
+.menu-list_item-active
+{
+    color: var(--Light-colour);
+    border: 0.2rem solid var(--Light-colour);
+padding: 0.5rem 1.2rem;
+border-radius: 5rem;
+}
+.menu-list_item-active:hover
+{
+    background-color: var(--Primary-colour);
+}
